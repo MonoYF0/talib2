@@ -174,7 +174,7 @@
 }
 
 .english {
-  animation: opacity 0.3s ease-out;
+  animation: opacity 0.3s ease-out 1.2s forwards;
 }
 
 .arabic {
@@ -189,9 +189,6 @@
   animation: opacity 0.3s ease-out 0.9s;
 }
 
-.french {
-  animation: opacity 0.3s ease-out 1.2s forwards;
-}
 
 section {
   min-height: 100vh;
@@ -227,4 +224,39 @@ section {
     transform: translate(0, -1000px);
   }
 }
-  
+  @media screen and (max-width: 768px) {
+    main, section {
+        padding: 40px 15px;
+    }
+
+    .pack-card {
+        width: 280px;
+        height: 320px;
+    }
+
+    .pack-card span {
+        font-size: 1.8rem;
+    }
+
+    .contact-btn {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+    .img img{
+        max-width: 300px;
+    }
+    .word{
+        font-size: 6.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maindesc {
+        font-size: 1.1rem;
+    }
+    
+    .pack-card {
+        width: 100%; /* Full width on tiny phones */
+        max-width: 300px;
+    }
+}
